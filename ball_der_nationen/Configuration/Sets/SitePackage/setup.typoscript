@@ -1,0 +1,69 @@
+page {
+    includeCSS {
+        theme = EXT:ball_der_nationen/Resources/Public/Scss/Theme/theme.scss
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        ball_der_nationen_scripts = EXT:ball_der_nationen/Resources/Public/JavaScript/main.js
+    }
+}
+
+# Suche Extension
+plugin.tx_indexedsearch {
+    settings {
+        displayAdvancedSearchLink = 0
+    }
+    config {
+        no_cache = 0
+        index_enable = 1
+        index_externals = 1
+        index_metatags = 1
+    }
+}
+
+# bm_image_gallery Extension
+plugin.tx_bmimagegallery {
+    view {
+        templateRootPaths >
+        templateRootPaths {
+            10 = EXT:ball_der_nationen/Resources/Private/Extensions/BmImageGallery/Templates/
+        }
+        partialRootPaths >
+        partialRootPaths {
+            10 = EXT:ball_der_nationen/Resources/Private/Extensions/BmImageGallery/Partials/
+        }
+        layoutRootPaths >
+        layoutRootPaths {
+            10 = EXT:ball_der_nationen/Resources/Private/Extensions/BmImageGallery/Layouts/
+        }
+    }
+    settings {
+        lightbox {
+            cssClass = lightbox
+            relAttribute = lightbox[mygallery]
+        }
+    }
+}
+
+// Alle Seiten die von der Indizierung durch die Typo3 Suchmaschine in den Page Settings 
+// ausgeschlossen sind erhalten über den folgenden Code ein "robots = noindex,nofollow"
+page.meta {
+  robots = INDEX,FOLLOW
+  robots.override = NOINDEX,NOFOLLOW 
+  robots.override.if.isTrue.field = no_search 
+  revisit-after = 7 days
+  revisit-after.override = never
+  revisit-after.override.if.isTrue.field = no_search 
+}

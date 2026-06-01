@@ -1,0 +1,25 @@
+plugin.bootstrap_package.settings.scss.primary: '#928073'
+plugin.bootstrap_package.settings.scss.secondary: '#7a6d64'
+plugin.bootstrap_package.view.layoutRootPath: 'EXT:ball_der_nationen/Resources/Private/Layouts/'
+plugin.bootstrap_package.view.partialRootPath: 'EXT:ball_der_nationen/Resources/Private/Partials/'
+plugin.bootstrap_package.view.templateRootPath: 'EXT:ball_der_nationen/Resources/Private/Templates/'
+
+plugin.bootstrap_package_contentelements.view.layoutRootPath: 'EXT:ball_der_nationen/Resources/Private/Layouts/ContentElements/'
+plugin.bootstrap_package_contentelements.view.partialRootPath: 'EXT:ball_der_nationen/Resources/Private/Partials/ContentElements/'
+plugin.bootstrap_package_contentelements.view.templateRootPath: 'EXT:ball_der_nationen/Resources/Private/Templates/ContentElements/'
+
+page.logo.file: 'EXT:ball_der_nationen/Resources/Public/Icons/favicon.ico'
+page.logo.fileInverted: 'EXT:ball_der_nationen/Resources/Icons/favicon.ico'
+page.logo.width: 192
+page.logo.alt: 'Ball der Nationen'
+page.logo.linktitle: 'Ball der Nationen'
+
+page.favicon.file: 'EXT:ball_der_nationen/Resources/Public/Icons/favicon.ico'
+
+page.fluidtemplate.layoutRootPath: 'EXT:ball_der_nationen/Resources/Private/Layouts/Page/'
+page.fluidtemplate.partialRootPath: 'EXT:ball_der_nationen/Resources/Private/Partials/Page/'
+page.fluidtemplate.templateRootPath: 'EXT:ball_der_nationen/Resources/Private/Templates/Page/'
+
+plugin.tx_bmimagegallery.view.templateRootPath: 'EXT:ball_der_nationen/Resources/Private/Extensions/BmImageGallery/Templates/'
+plugin.tx_bmimagegallery.view.partialRootPath: 'EXT:ball_der_nationen/Resources/Private/Extensions/BmImageGallery/Partials/'
+plugin.tx_bmimagegallery.view.layoutRootPath: 'EXT:ball_der_nationen/Resources/Private/Extensions/BmImageGallery/Layouts/'

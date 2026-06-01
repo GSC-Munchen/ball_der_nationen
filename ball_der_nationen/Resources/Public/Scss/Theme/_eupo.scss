@@ -1,0 +1,469 @@
+//
+// Custom Scss
+// CSS Anpassungen für die Webseite des Gelb-Schwarz-Casino München e.V.
+// Letzte Änderung: 24.12.2025
+//
+
+.backendlayout-simple {
+    background-color: #000000;
+    overflow-x: hidden;
+  
+    p {
+      font-size: clamp(16px, calc(0.9375rem + (21 - 16) * ((100vw - 300px) / (1600 - 300))), 21px);
+      line-height: clamp(20px, calc(1.25rem + (28 - 20) * ((100vw - 300px) / (1600 - 300))), 28px);
+      font-weight: 400;
+      font-family: 'Signika-Regular',sans-serif;  
+      letter-spacing: unset;
+    }
+  
+    .frame-container {
+      max-width: 1024px;
+      background: rgba(255,255,255,0.7);
+      padding-top: 53px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 100px;
+      margin-top: 177px;
+      margin-left: 150px;
+    }
+  }
+  
+  .backendlayout-subnavigation_left {
+    background-color: #000000;
+    overflow-x: hidden;
+  
+    h1 {
+      margin-top: 3px !important;
+    }
+  
+    p {
+      font-size: clamp(16px, calc(0.9375rem + (21 - 16) * ((100vw - 300px) / (1600 - 300))), 21px);
+      line-height: clamp(20px, calc(1.25rem + (28 - 20) * ((100vw - 300px) / (1600 - 300))), 28px);
+      font-weight: 400;
+      font-family: 'Signika-Regular',sans-serif;  
+      letter-spacing: unset;
+    }
+  
+    p a {
+      color: #928073;
+      font-size: clamp(16px, calc(0.9375rem + (21 - 16) * ((100vw - 300px) / (1600 - 300))), 21px);
+      line-height: clamp(20px, calc(1.25rem + (28 - 20) * ((100vw - 300px) / (1600 - 300))), 28px);
+      font-weight: 400;
+      font-family: 'Signika-Regular',sans-serif;  
+      letter-spacing: unset;
+      text-decoration: underline;
+      border-bottom: unset;
+    }
+  
+    p a:hover {
+      color: #928073;
+      font-size: clamp(16px, calc(0.9375rem + (21 - 16) * ((100vw - 300px) / (1600 - 300))), 21px);
+      line-height: clamp(20px, calc(1.25rem + (28 - 20) * ((100vw - 300px) / (1600 - 300))), 28px);
+      font-weight: 400;
+      font-family: 'Signika-Regular',sans-serif;  
+      letter-spacing: unset;
+      text-decoration: unset;
+    }
+
+    .frame a:not([class]) {
+      color: #928073;
+    }
+  
+    .frame-background-none.frame-space-after-none:not(.frame-ruler-after):not(.frame-has-backgroundimage)+.frame-background-none.frame-space-before-none:not(.frame-ruler-before):not(.frame-has-backgroundimage) {
+      margin-top: 3rem !important;
+    }
+  
+    .frame-background-secondary {
+      background-color: #009ee3;
+    }
+  
+    .frame {
+      padding-top: 17px;
+      padding-bottom: 0.2px;
+    }
+  
+    .form-group {
+      margin-bottom: 0px !important;
+    }
+
+    .btn-primary {
+      --bs-btn-bg: #928073;
+      --bs-btn-border-color: #928073;
+      --bs-btn-hover-bg: #7a6d64;
+      --bs-btn-hover-border-color: #7a6d64;
+      --bs-btn-active-bg: #7a6d64;
+      --bs-btn-active-border-color: #7a6d64;
+    }
+
+    .form-label {
+      display: none;
+    }
+  
+    // Hintergrundbild
+    .eupo {
+      background: url('../../Images/BdN_2026_Web_Motiv_2160px.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position-x: -80px;
+      background-position-y: 8px;
+      background-size: 65vw 70vw;    /* Hier ist das Verhältnis des Hintergrundbildes relativ zur Bildschirmbreite anzugeben, sonst ist der Hintergrund bei unterschiedlichen Textlängen nicht identisch */
+      font-family: 'Signika-Regular',sans-serif;
+    }
+  
+    .wrapper {  /* Begrenzung des Containers auf max 1024px um auch auf großen Bildschirmen das Layout zu erhalten */
+        max-width: 1024px;
+        margin: auto
+    }
+  
+    .eupo-schriftzug {  /* Bindet den EuPo Schriftzug ein und skaliert über die Breite mit */
+        background: url('../../Images/BdN-Schriftzug-einzeilig-beschnitten.svg');
+        height: calc(100vw / 2.73);
+        max-height: 400px;
+        background-repeat: no-repeat;
+    }
+  
+    .menu-container {
+      margin-top: unset !important;
+      background-color: rgba(0,0,0,0.5);
+    }
+  
+    .frame {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  
+    .frame-inner>*:last-child {
+      margin-bottom: 20px;
+    }
+  
+    .maincontent-wrap {
+      width: unset;
+    }
+
+    /* Bilder in der Gallerie auf 100% ziehen */
+    .c-gallery img {
+      max-width: 100%;
+    }
+
+    .gallery-partial {
+      -webkit-column-count: 1 !important;
+      -moz-column-count: 1 !important;
+      column-count: 1 !important;
+    }
+
+    .gallery-title {
+      width: 94% !important;
+    }
+
+    .gallery-partial .col-4 {
+      width: 100% !important;
+    }
+  
+    .GSClogo {  /* Bindet das GSC Logo ein, positioniert es und skaliert über die Breite mit */
+        background: url('../../Images/EuPo-GSC-logo.png');
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: right;
+        right: -75px;
+        top: -20px;
+        height: 198px;
+        max-width: 700px;
+    }
+  
+    .upper {  /* Hebt den Container mit dem Inhalt unter das Logo und skaliert über die Breite mit */
+        margin-top: -190px;
+    }
+  
+    @media screen and (max-width:1078px) {
+      .upper {
+        margin-top: calc(0px - (100vw / 6));
+      }
+    }
+  
+    .content {  /* Färbt den Hintergrund des Containers ein, steuert die maximale Breite */
+        background: rgba(255,255,255,0.7);
+        max-width: 700px;
+        padding: 25px;
+    }
+  
+    /* Anpassungen an die Bildschirmbreite ***********************************************************************/
+    @media screen and (max-width:767px) {
+        // Blendet in der Handyansicht markierte Elemente aus */
+        .collapsible {
+            display: none;
+        }
+        // Bindet den EuPo Schriftzug ein und skaliert über die Breite mit
+        .eupo-schriftzug {  
+            background: url('../../Images/BdN-Schriftzug-einzeilig-beschnitten.svg');
+            height: calc(100vw / 2.3);
+            max-height: 400px;
+            background-repeat: no-repeat;
+        }
+        // Setzt den oberen Abstand des Inhalt-Containers und skaliert über die Breite mit
+        .upper {
+            margin-top: -200px;
+        }
+        
+        @media screen and (max-width:1078px) {
+          .upper {
+            margin-top: calc(0px - (100vw / 5));
+          }
+        }
+    }
+  
+    /* Hier sind die Einstellungen des Hintergrundbildes von oben für die verschiedenen Bildschirmauflösungen (3x!) zu wiederholen! */
+    @media screen and (max-width:1440px) {
+        .eupo {
+            background: url('../../Images/BdN_2026_Web_Motiv_1440px.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position-x: -20px;
+            background-position-y: 3vh;
+            background-size: 65vw 70vw;
+        }
+    }
+  
+    @media screen and (max-width:1333px) {
+        .eupo {
+            background: url('../../Images/BdN_2026_Web_Motiv_1333px.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position-x: -50px;
+            background-position-y: 4vh;
+            background-size: 65vw 70vw;
+        }
+    }
+  
+    @media screen and (max-width:640px) {
+        .eupo {
+            background: url('../../Images/BdN_2026_Web_Motiv_640px.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position-x: -20px;
+            background-position-y: 130px;
+            background-size: 65vw 70vw;
+        }
+    }
+  
+    .menu-container {
+      margin-top: calc(23vw + 35px);
+    }
+  
+    /* Navigation */
+
+    .navbar {
+      background-color: #000000 !important;
+    }
+
+    .navbar-toggler {
+      color:#928073 !important;
+    }
+    li.nav-item a {
+      color: #FFFFFF !important;
+      font-family: 'Signika-Regular',sans-serif;
+      font-size: 16pt;
+      font-weight: 400;
+      text-decoration: none;
+      line-height: 1.5;
+    }
+  
+    li.nav-item a:hover {
+      background-color: unset !important;
+      color: #928073 !important;
+    }
+  
+    a.dropdown-item:hover {
+      background-color: unset !important;
+      color: #928073 !important;
+    }
+  
+  
+    li.nav-item.active a {
+      color: #928073 !important;
+      font-family: 'Signika-Regular',sans-serif;
+      font-size: 16pt;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 1.5;
+    }
+  
+    .nav-link {
+      padding: unset;
+    }
+  
+    .subnav-wrap {
+      display: block;
+      width: calc(100% / 12 * 2);
+    }
+  
+    h1 {
+      font-size: 20pt;
+      font-weight: 600;
+      padding-bottom: 13px;
+      font-family: 'Signika-Regular',sans-serif;
+    }
+  
+    h1, .h1, h2, .h2, h3, .h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #928073;
+      font-family: 'Signika-Regular',sans-serif;
+    }
+  
+    h3 {
+      font-family: 'Signika-Regular',sans-serif;
+      font-size: clamp(15px,calc(0.9375rem + (21 - 15) * ((100vw - 300px) / (1600 - 300))),21px);
+      color: #928073;
+      font-weight: 400;
+      letter-spacing: unset;  
+    }
+    
+    h3 a {
+      font-family: 'Signika-Regular',sans-serif;
+      font-size: clamp(15px,calc(0.9375rem + (21 - 15) * ((100vw - 300px) / (1600 - 300))),21px);
+      color: #928073;
+      text-decoration: underline;
+      border-bottom: none;
+      font-weight: 400;
+      letter-spacing: unset;
+    }
+  
+    h3 a:hover {
+      text-decoration: none;
+    }
+  
+    hr {
+      margin-top: 0;
+    }
+  
+    .dropdown-menu {
+      background: unset;
+      background-color: unset !important;
+    }
+  
+    .dropdown-text {
+      color: #FFFFFF !important;
+      font-family: 'Signika-Regular',sans-serif;
+      font-size: 16pt;
+      font-weight: 400;
+      text-decoration: none;
+    }
+    
+    .dropdown-item.active .dropdown-text {
+      color: #928073 !important;
+    }
+  
+    .dropdown-item.active {
+      background-color: transparent !important;
+    }
+  
+    .dropdown-item {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  
+    .dropdown-menu {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    
+    .dropdown-text:hover {
+      color: #928073 !important;
+    }
+  
+    // nina edit ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
+    // Mediengallerie Impresssionen
+    .frame-framebox1 {
+      border-top: unset;
+      border-bottom: unset;
+    }
+  
+    // Tabellen
+    .table td {
+      height: 40px;
+      background-color: #928073;
+      font-family: 'Signika-Regular',sans-serif;
+      color: #ffffff;
+    }
+    
+    
+    // To-Do: aus Quelltext entfernen und nicht nur ausblenden
+    #page-footer {
+      display: none;
+    }
+  
+    // Steuerung Seitennavi und Hamburger Menü
+    #page-header {
+      display: none;
+    }
+    .subnav-wrap {
+      display: unset;
+    }
+  
+    #GSClogo {
+      display: unset;
+    }
+  
+    @media screen and (max-width:990px) {
+      #page-header {
+        display: flex;
+      }
+  
+      .subnav-wrap {
+        display: none;
+      }
+  
+      #GSClogo {
+        display: none;
+      }
+    }
+  }
+
+  // bmimagegallery
+  .c-gallery__list-link {
+    font-family: "Bitter-Regular";
+    color: #556066;
+    text-decoration: none;
+    border-bottom: 2px dotted grey;
+    border-radius: 1px;
+    font-size: clamp(13px,calc(0.8125rem + (18 - 13) * ((100vw - 300px) / (1600 - 300))),18px);
+    line-height: clamp(20px,calc(1.25rem + (28 - 20) * ((100vw - 300px) / (1600 - 300))),28px);
+    letter-spacing: 0.04em;
+  }
+
+  .pagination {
+    padding-left: calc(var(--bs-gutter-x) * .38);
+    text-align: center;
+  }
+
+  .pagination li {
+    margin: 5px;
+    min-width: 20px;
+  }
+
+  .pagination li a {
+    padding: 10px; 
+	  background: #FFC300;
+	  border-radius: 5px;
+  }
+
+  .pagination li a:hover {
+	  background: #feeaa5;
+  }
+
+  .pagination li a span {
+    min-width: 20px;
+    display: inline-block;
+  }
+
+  .pagination .current {
+    padding: 0px 10px 10px 10px; 
+    display: inline-block;
+  }
+
+  .pagination .current span {
+    min-width: 20px;
+    display: inline-block;
+  }
+    

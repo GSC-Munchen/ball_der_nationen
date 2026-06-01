@@ -1,0 +1,13 @@
+plugin.bootstrap_package.settings.scss.font-family-sans-serif: sans-serif
+page.theme.googleFont.enable: false
+page.logo.fileInverted: 'EXT:ball_der_nationen/Resources/Public/Icons/favicon.ico'
+plugin.tx_bmimagegallery.view.templateRootPath: 'EXT:ball_der_nationen/Resources/Private/Extensions/BmImageGallery/Templates/'
+plugin.tx_bmimagegallery.view.partialRootPath: 'EXT:ball_der_nationen/Resources/Private/Extensions/BmImageGallery/Partials/'
+plugin.tx_bmimagegallery.view.layoutRootPath: 'EXT:ball_der_nationen/Resources/Private/Extensions/BmImageGallery/Layouts/'
+plugin.tx_bmimagegallery.settings.list.showCount: false
+plugin.tx_bmimagegallery.settings.gallery.showCount: false
+plugin.tx_bmimagegallery.settings.lightbox.cssClass: lightbox
+plugin.tx_bmimagegallery.settings.lightbox.relAttribute: 'lightbox[mygallery]'
+plugin.tx_bmimagegallery.settings.pagination.itemsPerPage: 21
+plugin.tx_bmimagegallery.settings.pagination.maximumNumberOfLinks: 5
+ns_all_lightbox.configuration.jquery: true

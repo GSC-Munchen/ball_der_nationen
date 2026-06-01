@@ -1,0 +1,4 @@
+name: gsc/ball-der-nationen
+label: 'Ball der Nationen'
+dependencies:
+  - bootstrap-package/full

@@ -1,0 +1,21 @@
+@import './PageTsConfig/BackendLayouts/'
+
+RTE {
+    default {
+        preset = ball_der_nationen
+    }
+}
+
+TCEFORM {
+    pages {
+
+    }
+    tt_content {
+
+    }
+}
+
+TCEMAIN {
+
+}
+
