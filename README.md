@@ -16,5 +16,5 @@ Based on the fantastic sitepackage builder of the TYPO3 team and the TYPO3 boots
 Thanks and a loud shout out the the TYPO3 team, making this fantastic CMS possible
 
 ## Compatibility
-| Version | TYPO3 | PHP | Remarks
-| 1  | 14 | 8.4 - 8.5 | full release
+| Version | TYPO3 | PHP | Remarks |
+| 1  | 14 | 8.4 - 8.5 | full release |
